@@ -5,8 +5,8 @@ const PORT = 3000;
 
 // Configure CORS
 app.use(cors({
-  // Allow requests from localhost:3001
-  origin: 'http://localhost:3001',
+  // Allow requests from https://remotetolocal.onrender.com
+  origin: 'https://remotetolocal.onrender.com',
   // Allow these HTTP methods
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   // Allow these headers in requests
@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
   res.json({
     message: 'Hello from localhost:3000!',
     timestamp: new Date().toISOString(),
-    cors: 'Enabled for localhost:3001'
+    cors: 'Enabled for https://remotetolocal.onrender.com'
   });
 });
 
