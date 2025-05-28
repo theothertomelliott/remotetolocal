@@ -1,0 +1,21 @@
+{
+  "name": "remotetolocal",
+  "version": "1.0.0",
+  "description": "A simple app that makes AJAX requests to localhost:3000 and displays the status",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:api": "node local-api-server.js",
+    "dev": "npm-run-all --parallel start start:api"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
